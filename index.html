@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="nameLogo">
+            <img class="schlLogo" src="id2W9CI1BL_logos.png" alt="logo">
+            <h3 class="schlName">Batangas State University</h3>
+        </div>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content1">
+        <div class="textWrapper">
+            <h3>Welcome to the</h3>
+            <h1>Batangas State University</h1>
+            <h1>The National Engineering University</h1>
+        </div>
+    </section>
+
+    <section class="content2">
+        <div class="textWrapper2">
+            <h2>Campus</h2>
+        </div>
+
+        <div class="cards">
+            <a href="https://www.facebook.com/bsu.alangilan" class="card" target="_blank">
+                <img class="alangilan" src="alangilan.jpg" alt="Alangilan Campus">
+                <p>Alangilan Campus</p>
+            </a>
+
+            <div class="card">
+                <img class="lipa" src="lipa.jpg" alt="lipa">
+                <p>Lipa Campus</p>
+            </div>
+            
+            <div class="card">
+                <img class="lemery" src="lemery.jpg" alt="lemery">
+                <p>Lemery Campus</p>
+            </div>
+            
+            <div class="card">
+                <img src="pablo borbon.jpg" alt="Pablo Borbon">
+                <p>Pablo Borbon</p>
+            </div>
+
+            <div class="card">
+                <img src="malvar.jpg" alt="Malvar Campus">
+                <p>Malvar Campus</p>
+            </div>
+
+            <div class="card">
+                <img src="rosario.jpg" alt="Rosario Campus">
+                <p>Rosario Campus</p>
+            </div>
+
+            <div class="card">
+                <img src="sanjuan.jpg" alt="San Juan Campus">
+                <p>San Juan Campus</p>
+            </div>
+
+            <div class="card">
+                <img src="lobo.png" alt="">
+                <p></p>
+            </div>
+
+            <div class="card">
+                <img src="nasugbu-.jpg" alt="">
+                <p></p>
+            </div>
+
+            <div class="card">
+                <img src="mabini.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content3">
+        <div class="textWrapper3">
+            <h1 class="title">Why <span class="highlight">BatState-U</span> ?</h1>
+            <hr class="red-line">
+            <h4 class="desc">Batangas State University is more than just a place of learning—it is a community that empowers future leaders, innovators, and changemakers. With world-class programs, state-of-the-art facilities, and a strong culture of research and innovation, BatState-U provides students with the knowledge and skills they need to excel in a rapidly changing world. Guided by the values of Excellence, Service, and Patriotism, we prepare graduates who are not only career-ready but also socially responsible and globally competitive.</h4>
+        </div>
+
+        <div class="images">
+            <div class="item">
+                <img src="student.jpg" alt="" class="image1">
+            </div>  
+
+            <div class="item">
+                <img src="download (1).jpg" alt="" class="image1">
+            </div>
+
+            <div class="item">
+                <img src="student2.jpg" alt="" class="image1">
+            </div>
+
+            <div class="item">
+                <img src="student3.jpg" alt="" class="image1">
+            </div>
+        </div>
+    </section>
+    
+    <section class="content4">
+        <div class="textWrapper4">
+            <h4 class="school">BatState-U</h4>
+            <h1 class="title">Courses</h1>
+            <hr class="red-line">
+        </div>
+
+        <div class="colleges">
+            <div class="card-college" onclick="changeInfo(1,0)">
+
+                <img src="logos/cics.png" alt="CICS" class="logos" id="cics-logo">
+                 <div class="side-text">
+                    <h1 id="course1">CICS</h1>
+                 </div>
+            </div>
+
+            <div class="card-college" onclick="changeInfo(2, 0)">
+                <img src="logos/ceafa.png" alt="Nursing" class="logos" id="ceafa-logo">
+                <div class="side-text">
+                    <h1 id="course1">CEAFA</h1>
+                </div>
+            </div>
+
+            <div class="card-college" onclick="changeInfo(3,0)">
+                <img src="logos/cabeihm.png" alt="Nursing" class="logos">
+                <div class="side-text">
+                    <h1 id="course1">CABEIHM</h1>
+                </div>
+            </div>
+            
+
+            <div class="card-college" onclick="changeInfo(4,0)">
+                <img src="logos/cte.png" alt="Nursing" class="logos">
+                <div class="side-text">
+                    <h1 id="course1">CTE</h1>
+                </div>
+            </div>
+        <!--
+            <div class="card-college">
+                <img src="nurse.png" alt="Nursing" class="logos" onclick="showInfo('CNAHS', 'College of Nursing and Allied Health Sciences', 'The College of Nursing is dedicated to developing competent, compassionate, and ethical healthcare professionals who are equipped to respond to the ever-changing demands of the healthcare system. With a strong foundation in science, research, and clinical practice, the college provides students with hands-on experience in hospitals, communities, and health institutions. It emphasizes holistic care, critical thinking, and lifelong learning, preparing graduates to become leaders in nursing practice, education, and research while upholding the highest standards of patient care.',
+                    ''
+                )">
+            </div>
+
+            <div class="card-college">
+                <img src="crims.png" alt="Criminology" class="logos" onclick="showInfo('CCJE', 'College of Criminal Justice Education', 'The College of Criminal Justice Education is committed to producing highly skilled, disciplined, and ethical professionals in the field of law enforcement, criminology, and public safety. Through a balance of theory, research, and practical training, the college equips students with knowledge in criminal law, forensic science, crime investigation, and correctional administration. With modern facilities and strong partnerships with law enforcement agencies, CCJE fosters integrity, critical thinking, and social responsibility, preparing graduates to contribute effectively to justice, peace, and community service.')">
+            </div>
+        -->
+        </div>
+
+        <div id="info-box">
+
+            <div class="course-pics">
+                <img id="big-image" src="cics/image (1).jpg" alt="Big Display">
+
+                <div class="thumbnails">
+                    <img id="img1" class="thumb" src="cics/image (1).jpg" alt="Image 1" >
+                    <img id="img2" class="thumb" src="cics/image (2).jpg" alt="Image 2" >
+                    <img id="img3" class="thumb" src="cics/image (3).jpg" alt="Image 3" >
+                    <img id="img4" class="thumb" src="cics/image (4).jpg" alt="Image 4" >
+                    <img id="img5" class="thumb" src="cics/image (5).jpg" alt="Image 5" >
+                </div>
+            </div>
+
+            <div id="descriptions">   
+               <h1 id="course-abbv">CICS</h1>
+               <h2 id="course-title">College of Informatics and Computing Sciences</h2>
+               <p id="course-desc">The College of Informatics and Computing Sciences is a hub for innovation and digital transformation. It equips students with advanced knowledge and practical skills in information technology, computer science, and data-driven problem-solving. 
+                Through a balance of theory, research, and hands-on application, CICS develops future-ready professionals who are capable of creating solutions in software development, cybersecurity, data analytics, and emerging technologies. 
+                The college fosters creativity, critical thinking, and collaboration, empowering graduates to thrive in the rapidly evolving digital world.', 
+                </p> 
+            </div>
+        </div>
+
+        <script>
+            const collegeImages = {
+                1: ["cics/image (1).jpg", "cics/image (2).jpg", "cics/image (3).jpg", "cics/image (4).jpg", "cics/image (5).jpg"],
+                2: ["ceafa/image (1).jpg", "ceafa/image (2).jpg", "ceafa/image (3).jpg", "ceafa/image (4).jpg", "ceafa/image (5).jpg"],
+                3: ["cabeihm/image (1).jpg", "cabeihm/image (2).jpg", "cabeihm/image (3).jpg", "cabeihm/image (4).jpg", "cabeihm/image (5).jpg"],
+                4: ["cte/image (1).jpg", "cte/image (2).jpg", "cte/image (3).jpg", "cte/image (4).jpg", "cte/image (5).jpg"],
+                5: ["cnahs/image (1).jpg", "cnahs/image (2).jpg", "cnahs/image (3).jpg", "cnahs/image (4).jpg", "cnahs/image (5).jpg"]
+            };
+
+             const information = {
+                1: ["CICS", "College of Informatics and Computing Sciences",
+                    'The College of Informatics and Computing Sciences is a hub for innovation and digital transformation. It equips students with advanced knowledge and practical skills in information technology, computer science, and data-driven problem-solving. Through a balance of theory, research, and hands-on application, CICS develops future-ready professionals who are capable of creating solutions in software development, cybersecurity, data analytics, and emerging technologies. The college fosters creativity, critical thinking, and collaboration, empowering graduates to thrive in the rapidly evolving digital world.', 
+                    "logos/cics.png"],
+                2: ["CEAFA", "College of Engineering, Architecture and Fine Arts", 
+                    "The College of Engineering, Architecture and Fine Arts (CEAFA) shapes innovators, builders, and creators by combining technical expertise, design thinking, and artistic expression. It prepares graduates to design sustainable solutions, advance technologies, and contribute to both engineering and the arts with creativity and purpose.", 
+                    "logos/ceafa.png"],
+                3: ["CABEIHM", "College of Accountancy, Business, Economics and International Hospitality Management", 
+                    "The College of Accountancy, Business, Economics, and International Hospitality Management (CABEIHM) develops future business leaders and professionals in finance, management, economics, and hospitality. It equips students with practical skills, global perspectives, and an entrepreneurial mindset to excel in corporate, economic, and service industries while fostering innovation, integrity, and leadership.", 
+                    "logos/cabeihm.png"],
+                4: ["CTE", "College of Teacher Education", "The College of Teacher Education (CTE) is dedicated to preparing future educators who are competent, compassionate, and committed to excellence. It provides strong foundations in pedagogy, research, and practice, equipping graduates to inspire learning, foster critical thinking, and lead in diverse educational settings.", 
+                    "logos/cte.png"],
+                5: ["CNAHS", "College of Nursing and Allied Health Science ", "cnahs/image (3).jpg", "cnahs/image (4).jpg", "cnahs/image (5).jpg"]
+            };
+
+            function changeInfo(set) {
+                const infos = information[set];
+                if (!infos) return;
+
+                showImages(set)
+
+                document.getElementById('course-abbv').innerText = infos[0];
+                document.getElementById('course-title').innerText = infos[1];
+                document.getElementById('course-desc').innerText = infos[2];
+                document.getElementById("course-logo").src = infos[3]; 
+            }
+
+            function changeImage(i) {
+                document.getElementById("big-image").src = i;
+            }
+
+            function showInfo(id, courseAbbv, courseTitle, courseDesc) {
+                changeImages(id)
+                document.getElementById('course-abbv').innerText = courseAbbv;
+                document.getElementById('course-title').innerText = courseTitle;
+                document.getElementById('course-desc').innerText = courseDesc;
+            }
+
+            function showImages(set) {
+                const images = collegeImages[set];
+                if (!images) return;
+
+                const bigImage = document.getElementById('big-image');
+                const thumbs = document.querySelectorAll('.thumb');
+
+                // set big image
+                bigImage.src = images[0];
+
+                // set thumbnail images
+                thumbs.forEach((thumb, index) => {
+                    thumb.src = images[index];
+                    thumb.onclick = () => {
+                    bigImage.src = images[index]; // change big image when clicked
+                    };
+                });
+            }
+        </script>
+    </section>
+
+
+
+
+
+
+
+
+</body>
+</html>

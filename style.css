@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nameLogo{
+    display: flex;
+}
+
+.schlName {
+    padding: 20px;
+    padding-left: 10px;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    justify-content: space-between;
+    align-items: center;
+    color: #BD081C;
+    background: transparent;   /* make sticky header overlay */
+    background: rgba(255, 255, 255, 0); /* fully transparent */
+    z-index: 10;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav_links li a:hover {
+    color: red;
+}
+
+.content1 {
+  width: 100vw;
+  min-height: 100vh; /* full viewport height */
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+  url("bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.textWrapper  {
+    color: white;
+    padding-left: 100px;
+}
+
+.textWrapper h3 {
+    font-size: 25px;
+}
+
+.textWrapper h1 {
+    font-size: 50px;
+}
+
+
+.content2 {
+  width: 100vw;
+  height: 100vh; /* full viewport height */
+  background-color:white;
+}
+
+.textWrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textWrapper2 h2 {
+    font-size: 5rem;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 180px;
+    width: 300px;
+    transition: transform 0.2s ease;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(189,8,28,0.8), rgba(0,0,0,0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%; /* add this so image fills card */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.card p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover::after {
+    opacity: 1; /* ✅ show gradient */
+}
+
+.card:hover p {
+    opacity: 1;
+}
+
+.content3 {
+  width: 100vw;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  align-items: center;
+  background-color:white;
+  flex-wrap: wrap;
+}
+
+.content3 .textWrapper3 {
+    width: 1000px;
+    height: 500px;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight {
+    color: #BD081C;
+}
+
+.red-line {
+  border: none;
+  height: 3px;
+  background: red;
+  margin-top: 15px;
+}
+
+.desc {
+   padding-top: 20px;
+
+   text-align: justify;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 600px;
+    padding-top: 30px;
+}
+
+.item {
+    flex: 1 1 calc(50% - 10px);
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content4 {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh; 
+    flex-direction: column;
+}
+
+.content4 .textWrapper4 {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight {
+    color: #BD081C;
+}
+
+.content4 .red-line {
+  border: none;
+  height: 5px;
+  width: 450px;
+  background: red;
+  margin-top: 15px;
+}
+
+.content4 .school {
+    font-weight: normal;
+    font-size: medium;
+}
+
+
+.side-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+     
+.side-text h1 {
+    font-size: 50px;
+}
+
+.side-text h4 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.colleges {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.card-college { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logos {
+    height: 80px;               /* all logos same height */
+    width: auto;                /* keep aspect ratio */
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.card-college:hover { 
+    transform: scale(1.08);
+
+}
+
+#info-box {
+    display: flex;              /* side by side */
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 50px;                  /* space between columns */
+    padding: 20px;
+    padding-left: 150px;
+    border-radius: 10px;
+}
+
+#descriptions {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5em;
+    margin-top: 30px;
+}
+
+
+#course-abbv { 
+    font-size: 50px;
+    margin: 0;
+}
+
+#course-title {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+}
+
+#course-desc {
+    text-align: justify;
+    line-height: 2;
+
+}
+
+
+
+#big-image {
+      width: 600px;
+      height: 350px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+    }
+
+    /* Thumbnails container */
+    .thumbnails {
+      display: flex;
+      gap:19px;
+    }
+
+    /* Each thumbnail */
+    .thumbnails img {
+      width: 105px;
+      height: 90px;
+      border-radius: 6px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.2s ease, border 0.2s ease;
+    }
+
+    /* Hover and active states */
+    .thumbnails img:hover {
+      transform: scale(1.1);
+      border: 2px solid #BD081C;
+    }
